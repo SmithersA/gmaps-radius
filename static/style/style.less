@@ -1,8 +1,12 @@
 @import (inline) "reset.css";
 @import (reference) "elements.less";
 
-@color: rgb(102, 102, 102);
-@highlight-color: rgb(58, 132, 223);
+@for $i from 1 through 400 {
+	$red: random(255);
+	$green: random(255);
+	$blue: random(255);
+@color: rgb($red, $green, $blue);
+@highlight-color: rgb($red, $green, $blue);
 
 .card () {
     .box-shadow(0 0 6px rgba(0, 0, 0, 0.298039));
